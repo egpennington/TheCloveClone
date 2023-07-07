@@ -1,0 +1,172 @@
+:root {
+    --main-color: #CAC7C2;
+    --dark-color: #3C3B37;
+    --light-color: #fff;
+    --accent-color: #F6101D;
+    --secondary-color: #41949C;
+    --light-secondary-color: #BCD0D9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--main-color);
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    margin: 0 auto;
+}
+
+.magCover img {
+    height: 200px;
+    position: absolute;
+    top:80%;
+    right: 35%;
+    z-index: 2;
+}
+/* utilities */
+.txt-sm {
+    font-size: 0.4rem;    
+}
+
+.txt-med {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-color)
+}
+
+a:hover {
+    opacity: 0.7;
+    color: var(--accent-color);
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+      "box1 box2"
+      "box3 box4"
+      "footer footer";
+    grid-gap: 3px;
+    height: 100vh;
+    width: 99%;
+    margin: 2px auto 0 auto;
+}
+
+.logo {
+    width: 200px;
+    color: var(--dark-color);
+}
+
+.box1 {
+  grid-area: box1;
+  height: 700px;
+  background: #333;
+  background-image: url("https://images.pexels.com/photos/12032137/pexels-photo-12032137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.box2 {
+  grid-area: box2;
+  position: relative;
+  background: #f4f4f4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#myVideo {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.box3 {
+  grid-area: box3;
+  padding: 25px;
+  line-height: 1.6;
+  text-align: center;
+  background: var(--secondary-color);
+  font-style: italic;
+  color: var(--dark-color)
+}
+
+.box3 .red-x {
+  text-decoration: line-through;
+  text-decoration-color: var(--accent-color);    
+}
+.box3 .white {
+  color: var(--light-color);
+}
+
+.box4 {
+  grid-area: box4;
+  text-align: center;
+  margin: 20px auto;
+  background: var(--main-color);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.box4 h2 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.box4 .bottom {
+  margin-top: 20px;
+  color: var(--dark-color);
+}
+
+.box4 p {
+  text-transform: none;
+  margin-top: 20px;
+}
+
+footer {
+  grid-area: footer;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  background: var(--main-color);
+  border-top: var(--dark-color) 1px solid;
+}
+
+@media(max-width: 468px) {
+  .container {
+      grid-template-areas:
+        "box1"
+        "box3"
+        "box4"
+        "box2"
+        "footer";
+  }
+    
+  .box1,
+  .box2 {
+      height: 300px;
+  }
+}
+
+/* other potential images 
+https://images.pexels.com/photos/4612305/pexels-photo-4612305.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+
+https://images.pexels.com/photos/2677831/pexels-photo-2677831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+
+https://images.pexels.com/photos/300960/pexels-photo-300960.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+
+https://images.pexels.com/photos/16018910/pexels-photo-16018910/free-photo-of-groom-holding-the-bride-on-a-sandy-beach.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+
+https://images.pexels.com/photos/12032137/pexels-photo-12032137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+
+https://images.pexels.com/photos/8734415/pexels-photo-8734415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 */
