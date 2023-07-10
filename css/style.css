@@ -35,6 +35,7 @@ body {
 .txt-med {
     font-size: 0.9rem;
     font-style: italic;
+    margin-top: 20px;
 }
 
 a {
@@ -114,7 +115,6 @@ a:hover {
   margin: 20px auto;
   background: var(--main-color);
   text-transform: uppercase;
-  border-bottom: 1px solid var(--accent-color);
 }
 
 .box4 h2 {
