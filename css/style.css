@@ -120,6 +120,7 @@ a:hover {
 .box4 h2 {
   font-size: 3rem;
   margin-bottom: 0;
+  display: inline-block;
 }
 
 .box4 .bottom {
