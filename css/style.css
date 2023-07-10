@@ -142,6 +142,10 @@ footer {
   border-top: var(--dark-color) 1px solid;
 }
 
+footer p {
+    font-size: 0.9rem;
+}
+
 @media(max-width: 468px) {
   .container {
       grid-template-areas:
